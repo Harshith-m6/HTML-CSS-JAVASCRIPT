@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bulb</title>
+</head>
+
+<body>
+    <h1>Light bulb ON/OFF</h1>
+    <img id ="img" src="https://plus.unsplash.com/premium_vector-1733814206646-e464a5f542ee?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=722" alt="">
+    <br> <br>
+
+    <button onclick="turnOn()">Turn ON</button>
+
+    <button id="eh">Turn Off</button>
+
+    <button id="el">Toggle</button>
+
+    <style>
+        *{
+            padding: 0%;
+            margin: 0%;
+        }
+        body{
+            background-color: bisque;
+        }
+        #img{
+            height: 20vh;
+            width: 10vw;
+        }
+        button{
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            color: aliceblue;
+            background: blueviolet;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+        button:hover{
+
+            background-color: blue;
+        }
+    </style>
+    <script>
+        function turnOn(){
+            document.getElementById("img").src="https://plus.unsplash.com/premium_vector-1731582098662-bc29299e2b0a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=880"
+        }
+        const off =document.getElementById("eh");
+        off.onclick = function(){
+            document.getElementById("img").src ="https://plus.unsplash.com/premium_vector-1733814206646-e464a5f542ee?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=722"
+        }
+        const toggle = document.getElementById("el");
+        let isOn = false;
+        toggle.addEventListener("click" , function(){
+            const img = document.getElementById("img")
+            if(isOn)
+        {
+            img.src="https://plus.unsplash.com/premium_vector-1733814206646-e464a5f542ee?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=722"
+        }else {
+            img.src ="https://plus.unsplash.com/premium_vector-1731582098662-bc29299e2b0a?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=880"
+        }
+        isOn =!isOn;
+        });
+    </script>
+</body>
+
+</html>

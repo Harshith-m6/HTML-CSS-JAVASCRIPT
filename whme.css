@@ -1,0 +1,87 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+nav{
+    height: 10vh;
+    width: 100vw;
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.space{
+    height: 90%;
+    width: 95%;
+    background: rgb(232, 232, 232);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height: 100%;
+    width: 15%; 
+}
+img{
+    height: 100%; 
+}
+.sub{
+    display: flex;
+    align-items: center; 
+    height: 100%;
+    width: 50%;
+     /* background: blueviolet; */
+     list-style: none;
+     justify-content: space-around;
+
+} 
+.navul{
+     height: 100%;
+   display: flex;
+   align-items: center;
+}
+main{
+    background-color: black;
+    color: aliceblue;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+}
+h1{
+    width: 70%;
+    font-size: 80px;
+    /* background-color: aqua; */
+}
+p{
+        width: 70%;
+        /* background-color: brown; */
+        letter-spacing: 2px;
+        line-height: 30px;
+        font-size: 20px;
+}
+.recent{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.cards{
+    height: 90vh;
+    width: 100vw;
+    /* background-color: aquamarine; */
+   
+
+
+}
+.card{
+
+}
+

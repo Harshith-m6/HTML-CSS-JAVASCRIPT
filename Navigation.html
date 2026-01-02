@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+</head>
+<body>
+    <header>
+        <navbar>
+            <ul>
+                <li><a href="" onclick="home(event)">Home</a></li>
+                <li><a href="" onclick="about()">About</a></li>
+                <li><a href="" onclick="contact()">Contact</a></li>
+            </ul>
+            <div>
+                <img src="" alt="">
+            </div>
+        </navbar>
+    </header>
+    <main>
+        <p>
+
+        </p>
+    </main>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+        }
+        header{
+            height: 10vh;
+            width: 100vw;
+            background-color: aquamarine;
+        }
+        navbar{
+            display: flex;
+             height: 100%;
+            width: 100%;
+            /* background-color: coral; */
+            justify-content: space-around;
+            
+        }
+        ul{
+           
+            
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            list-style: none;
+            /* background-color: brown; */
+            width: 35%;
+        }
+        div{
+            /* background-color: darkcyan; */
+            width: 35%;
+        }
+    </style>
+    <script>
+        let show = document.getElementsByTagName("p")[0];
+        function home(event){
+            event.preventDefault();
+            show.innerText="this is home page";
+        }
+    </script>
+</body>
+</html>
