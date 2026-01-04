@@ -1,0 +1,15 @@
+div{
+    background-color: cadetblue;
+    color: rgb(4, 5, 7);
+}
+
+.box{
+    background-color: burlywood;
+    color: blueviolet;
+    height: 100px;
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    border: black 1px solid;
+    
+}
