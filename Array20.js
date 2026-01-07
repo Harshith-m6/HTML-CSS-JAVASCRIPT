@@ -21,4 +21,16 @@ for(let i in student)
     console.log(`${i} : ${student[i]}`);
     
 }
+let arr =[];
+for(let i in student)
+{
+    arr.push(student[i]);
+}
+console.log(arr);
 
+let array =[];
+for(let i in student)
+{
+    array[array.length] = [i , student[i]]
+}
+console.log(array);
